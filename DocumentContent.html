@@ -8,7 +8,7 @@
     <title>Joho</title>
     <link rel="icon" href="./img/joho.ico" type="image/x-icon">
 </head>
-<div>
+<body>
     <div class="head_content">
         <div class="my_title title1">
             CONTENIDO  
@@ -18,6 +18,43 @@
         </div>
     </div>
     <div class="my_form_container" id="text-val">
+        <div class="member" id="DownloadContent">
+            <div id="overlay">
+                <div class="overlay-container">
+                    <div id="text">
+                        Se exportará y descargará el documento.
+                    </div>
+                    <div class="group">
+                        <div class="buttons">
+                            <button class="my_button button1" id="dwn-btn-confirm">
+                                Confirmar
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="my_button button2" onclick="offDC()">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="member" id="ContentDownloaded">
+            <div id="overlay">
+                <div class="overlay-container">
+                    <div id="text">
+                        El documento ha sido exportado exitosamente.
+                    </div>
+                    <div class="button-group">
+                        <div class="one-btn">
+                            <button class="my_button button1" onclick="offCD()">
+                                Aceptar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="group1">
             <div class="s-content">
                 <div class="my_label l-t1 l-t11">
@@ -94,7 +131,7 @@
             </div>
         </div>
     </div>
-</div>
+</body>
 <script>
     function download(filename, text) {
         var element = document.createElement('a');
@@ -110,7 +147,7 @@
     }
 
     // Start file download.
-    document.getElementById("dwn-btn").addEventListener("click", function(){
+    document.getElementById("dwn-btn-confirm").addEventListener("click", function(){
         // Generate download of hello.txt file with some content
         var text =  "Paciente: " +  
                     document.getElementById("nombre").textContent + " " +
@@ -128,5 +165,17 @@
                     document.getElementById("recomendaciones").value;
         var filename = "content.txt";
         download(filename, text);
+        document.getElementById("DownloadContent").style.display = "None";
+        document.getElementById("ContentDownloaded").style.display = "Block";
     }, false);
+
+    document.getElementById("dwn-btn").addEventListener("click",function(){
+        document.getElementById("DownloadContent").style.display = "block";
+    })
+    function offDC(){
+        document.getElementById("DownloadContent").style.display = "None";
+    }
+    function offCD(){
+        document.getElementById("ContentDownloaded").style.display = "None";
+    }
 </script>
