@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/document2style.css">
+    <title>Joho</title>
+    <link rel="icon" href="./img/joho.ico" type="image/x-icon">
+</head>
+<div>
+    <div class="head_content">
+        <div class="my_title title1">
+            CONTENIDO  
+        </div>
+        <div class="my_title title2" onClick="location.href='DocumentAbout.html'">
+                ACERCA DE
+        </div>
+    </div>
+    <div class="my_form_container" id="text-val">
+        <div class="group1">
+            <div class="s-content">
+                <div class="my_label l-t1 l-t11">
+                    <span id="nombre">Jorge Diaz (201923537)</span>
+                    <img class="my_icon" src="img/carbon_report.png">
+                </div>
+                <div class="flexing">
+                    <div class="s-img">
+                        <img class="export" src="img/Export.png" id="dwn-btn">
+                    </div>
+                    <div class="s-content">
+                        <div class="my_label l-t1 l-t12">
+                            <span id="fecha">19:29  |  20-09-2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-img">
+                <img class="my_img" src="img/image 2.png" alt="Avatar">
+            </div>
+        </div>
+        <div class="group">
+            <div class="g-label"  id="motivo-title">
+                <div class="my_label l-t4">Motivo: </div>
+            </div>
+            <div class="g-textarea">
+                <textarea name="motivo" id = "motivo" 
+                          style="height: 30px;"
+                          readonly>Ataques de pánico y ansiedad.</textarea>
+            </div>
+        </div>
+        <div class="group">
+            <div class="g-label">
+                <div class="my_label l-t4">Resumen: </div>
+            </div>
+            <div class="g-textarea">
+                <textarea name="resumen" id="resumen" 
+                          placeholder="Resumen de la cita..."
+                          style="height: 45px;"
+                          readonly>El alumno presenta espasmos de ansiedad y pánico antes de situaciones de exigencia académica.</textarea>
+            </div>
+        </div>
+        <div class="group">
+            <div class="g-label">
+                <div class="my_label l-t4">Detalles de la sesión: </div>
+            </div>
+            <div class="g-textarea">
+                <textarea name="detalles" id="detalles" 
+                          placeholder="Detalles de la sesión..."
+                          style="height: 60px;"
+                          readonly>Se le enseñaron al estudiante técnicas de respiración para calmarse cuando siente que está iniciando un episodio de ataque de pánico. Además, se le recomendó hacer ejercicio.</textarea>
+            </div>
+        </div>
+        <div class="group">
+            <div class="g-label">
+                <div class="my_label l-t4">Conclusiones: </div>
+            </div>
+            <div class="g-textarea">
+                <textarea name="conclusiones" id="conclusiones"
+                          placeholder="Conclusiones de la cita..."
+                          style="height: 40px;"
+                          readonly>Se llegó a la conclusión de que el estudiante sufre de ataques de pánico, por lo que es necesario que se lleve a cabo un proceso más riguroso de evaluación para lo cual ya se reservó una cita.</textarea>
+            </div>
+        </div>
+        <div class="group">
+            <div class="g-label">
+                <div class="my_label l-t4">Recomendaciones: </div>
+            </div>
+            <div class="g-textarea">
+                <textarea name="recomendaciones" id="recomendaciones" 
+                          placeholder="Recomendaciones de la cita..."
+                          style="height: 40px;"
+                          readonly>Se le enseñaron al estudiante técnicas de respiración para calmarse cuando siente que está iniciando un episodio de ataque de pánico. Además, se le recomendó hacer ejercicio.</textarea>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function download(filename, text) {
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:txt/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+    }
+
+    // Start file download.
+    document.getElementById("dwn-btn").addEventListener("click", function(){
+        // Generate download of hello.txt file with some content
+        var text =  "Paciente: " +  
+                    document.getElementById("nombre").textContent + " " +
+                    "Fecha: " +
+                    document.getElementById("fecha").textContent + " " +
+                    "\nMotivo:\n" + 
+                    document.getElementById("motivo").value +
+                    "\nResumen:\n" + 
+                    document.getElementById("resumen").value +
+                    "\nDetalles:\n" + 
+                    document.getElementById("detalles").value +
+                    "\nConclusiones:\n" + 
+                    document.getElementById("conclusiones").value +
+                    "\nRecomendaciones:\n" + 
+                    document.getElementById("recomendaciones").value;
+        var filename = "content.txt";
+        download(filename, text);
+    }, false);
+</script>
