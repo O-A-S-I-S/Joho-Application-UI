@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <title>Joho</title>
+  </head>
+  <body>
+    <header>
+      <div class="search-bar">
+        <input
+          class="search-bar__text"
+          type="text"
+          name="student"
+          id="student"
+          placeholder="  Código o nombre del estudiante"
+        />
+        <button type="submit" class="search-bar__btn">BUSCAR</button>
+      </div>
+      <div class="search-options">
+        <div class="search-options__opt">
+          <a href="#"><i class="fas fa-filter"></i></a>
+        </div>
+        <div class="search-options__opt">
+          <a href="#"><i class="fas fa-arrow-down"></i></a>
+        </div>
+        <div class="search-options__opt">
+          <a href="#"><i class="far fa-star"></i></a>
+        </div>
+        <div class="search-options__orderby">
+          <form
+            action="search-options__orderby-submit"
+            method="get"
+            accept-charset="utf-8"
+          >
+            <select name="order" id="order" required>
+              <option
+                value=""
+                class="search-options__order-option"
+                selected
+                disabled
+              >
+                Ordenar por
+              </option>
+              <option value="descendent" class="search-options__order-option">
+                Cronológico descendente
+              </option>
+              <option value="ascendent" class="search-options__order-option">
+                Cronológico ascendente
+              </option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="results-list">
+          <div class="past-search">
+            <div class="user-profile"><i class="fas fa-user-circle"></i></div>
+            <div class="search-info">
+              <div class="search-info__code">201923537</div>
+              <div class="search-info__date">19:29 | 20-09-2022</div>
+              <div class="search-info__name">Jorge Luis Díaz Flores</div>
+              <div class="search-info__stats">
+                22 <i class="far fa-file"></i>
+              </div>
+              <div class="search-info__stats">
+                7 <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="past-search">
+            <div class="user-profile"><i class="fas fa-user-circle"></i></div>
+            <div class="search-info">
+              <div class="search-info__code">2019e3823</div>
+              <div class="search-info__date">15:20 | 20-09-2022</div>
+              <div class="search-info__name">Elisa Luna López Silva</div>
+              <div class="search-info__stats">
+                7 <i class="far fa-file"></i>
+              </div>
+              <div class="search-info__stats">
+                2 <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="past-search">
+            <div class="user-profile"><i class="fas fa-user-circle"></i></div>
+            <div class="search-info">
+              <div class="search-info__code">2017c2524</div>
+              <div class="search-info__date">11:50 | 20-09-2022</div>
+              <div class="search-info__name">Juan Aquiles Barrenechea Vida</div>
+              <div class="search-info__stats">
+                15 <i class="far fa-file"></i>
+              </div>
+              <div class="search-info__stats">
+                5 <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="past-search">
+            <div class="user-profile"><i class="fas fa-user-circle"></i></div>
+            <div class="search-info">
+              <div class="search-info__code">202056898</div>
+              <div class="search-info__date">14:12 | 19-09-2022</div>
+              <div class="search-info__name">Leandro Esteban Díaz Pérez</div>
+              <div class="search-info__stats">
+                3 <i class="far fa-file"></i>
+              </div>
+              <div class="search-info__stats">
+                0 <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="past-search">
+            <div class="user-profile"><i class="fas fa-user-circle"></i></div>
+            <div class="search-info">
+              <div class="search-info__code">202022177</div>
+              <div class="search-info__date">08:15 | 19-09-2022</div>
+              <div class="search-info__name">Luisa Andrea Paz Guerra</div>
+              <div class="search-info__stats">
+                8 <i class="far fa-file"></i>
+              </div>
+              <div class="search-info__stats">
+                1 <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-load-more">
+          <button class="list-load-more__btn">Cargar más resultados</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
