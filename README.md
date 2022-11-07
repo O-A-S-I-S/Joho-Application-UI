@@ -31,3 +31,15 @@
 ![Metrics personal ss](./ss/metrics-personal-desktop.PNG)
 ## Metrics Personal - Mobile
 ![Metrics personal ss](./ss/metrics-personal-mobile.PNG)
+## New Document - Desktop
+![New Document ss](./ss/new-document.png)
+## New Document - Mobile
+![New Document ss](./ss/new-document-mobile.png)
+## Document Content - Desktop
+![Document Content ss](./ss/document-content.png)
+## Document Content - Mobile
+![Document Content ss](./ss/document-content-mobile.png)
+## Document Content - Desktop
+![Document About ss](./ss/document-about.png)
+## Document About - Mobile
+![Document About ss](./ss/document-about-mobile.png)
