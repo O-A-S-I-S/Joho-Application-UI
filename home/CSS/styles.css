@@ -7,6 +7,14 @@
   --text--color: #020202;
   --light-text-color:#fafafa;
   --text--family: "Roboto";
+  --primary-color: #600d67;
+  --secondary-color: #09002e;
+  --secondary-color-light: #463f62;
+  --secondary-alt-color: #610083;
+  --primary-light-color: #954fad;
+  --secondary-light-color: #e0e0e0;
+  --font-dark-color: #020202;
+  --font-light-color: #fafafa;
 
 }
 html,body{
@@ -188,7 +196,6 @@ html,body{
   top:300px;
   max-height: fit-content;
   max-width:fit-content;
-  border: 1px solid red;
   display: flex;
   overflow-x:auto;
 }
@@ -249,4 +256,264 @@ html,body{
 
   border-radius: 50%;
   color: white;
+}
+
+
+
+
+
+#modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+#modal {
+  width: 800px;
+  max-width: 800px;
+  height: 400px; 
+  position: absolute;
+  background: var(--font-light-color);
+  left: calc(50% - 400px);
+  top: calc(50% - 200px);
+  border-radius: 15px;
+}
+#modal2::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+#modal2 {
+  width: 800px;
+  max-width: 800px;
+  height: 400px; 
+  position: absolute;
+  background: var(--font-light-color);
+  left: calc(50% - 400px);
+  top: calc(50% - 200px);
+  border-radius: 15px;
+}
+
+.container-text {
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  overflow-y: auto;
+  background-color: white;
+
+}
+
+.container-text h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.close-pop-up_box {
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  top: 250px;
+  float: right;
+  right: calc(25% - 125px);
+  background: white;
+  color: var(--text--color);
+  border-radius: 10px;
+}
+.close-pop-up_box2 {
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  top: 250px;
+  float: left;
+  left: calc(25% - 125px);
+  background: var(--primary-light-color);
+  border-radius: 10px;
+  border: 2px solid var(--text--color); 
+}
+.close-pop-exit{
+  width: 250px;
+  height: 60px;
+  background: var(--light-text-color);
+  border-radius: 10px;
+  border:none;
+
+}
+.close-pop-up_box a {
+  font-size: 40px;
+  margin: 22%;
+  text-decoration: none;
+}
+.close-pop-up_box2 a {
+  font-size: 40px;
+  margin: 22%;
+  text-decoration: none;
+}
+
+#exportar::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+#exportar {
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  background: var(--secondary-color-light);
+  top: 20px;
+  left: 20px;
+  border-radius: 1%;
+  border: 2px solid var(--secondary-light-color);
+}
+
+.container-text_4 {
+  width: 100%;
+  padding: 10px;
+  overflow-y: auto;
+}
+.container-text_4 h1 {
+  margin-left: 70px;
+  font-size: 28px;
+  color: var(--font-light-color);
+}
+.container-text_4 p {
+  padding: 30px;
+  margin-top: 3px;
+  margin-left: 70px;
+  font-size: 25px;
+  color: var(--font-light-color);
+}
+
+
+.Documentos_line {
+  width: 100%;
+  height: 2px;
+  background: var(--font-light-color);
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+.line_1 {
+  width: 3%;
+  height: 4px;
+  background: var(--font-light-color);
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+.line_2 {
+  width: 3%;
+  height: 4px;
+  background: var(--font-light-color);
+  position: absolute;
+  top: 90px;
+  left: 20px;
+}
+.line_3 {
+  width: 3%;
+  height: 4px;
+  background: var(--font-light-color);
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.lupa {
+  width: 30px;
+  height: 30px;
+  background: url("../assets/lupa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.flecha {
+  width: 40px;
+  height: 40px;
+  background: url("../assets/flecha.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+.pdf {
+  width: 50px;
+  height: 60px;
+  background: url("../assets/pdf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 150px;
+  top: 200px;
+}
+.pdf2 {
+  width: 50px;
+  height: 60px;
+  background: url("../assets/pdf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 150px;
+  top: 350px;
+}
+.pdf3 {
+  width: 50px;
+  height: 60px;
+  background: url("../assets/pdf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 150px;
+  top: 490px;
+}
+.pdf4 {
+  width: 50px;
+  height: 60px;
+  background: url("../assets/pdf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 150px;
+  top: 630px;
+}
+.pdf5 {
+  width: 50px;
+  height: 60px;
+  background: url("../assets/pdf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 150px;
+  top: 770px;
+}
+.texto_archivos {
+  width: 100%;
+  overflow-y: auto;
+}
+.texto_archivos p {
+  padding: 30px;
+  margin-top: 40px;
+  margin-left: 250px;
+  font-size: 35px;
+  color: var(--font-light-color);
+  letter-spacing: 0.50em;
+}
+
+.close-pop-up_box_4 {
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  margin-top: 90px;
+  left: calc(50% - 125px);
+  background: var(--primary-light-color);
+  border-radius: 10px;
+  border: none;
+}
+
+.close-pop-up_box_4 a {
+  font-size: 40px;
+  color: var(--font-light-color);
+  margin: 22%;
+  text-decoration: none;
 }
