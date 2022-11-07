@@ -40,9 +40,9 @@
         <form action="" id="form">
             <div class="credenciales_box">
                 <input class="usuario_box" type="text" name="nombres" id="nombres" placeholder="Usuario"
-                    autocomplete="off" maxlength="40">
+                    autocomplete="off" maxlength="40" required>
                 <input class="contraseña_box" type="password" name="contraseña" id="contraseña" placeholder="Contraseña"
-                    autocomplete="off" maxlength="40">
+                    autocomplete="off" maxlength="40" required>
 
                 <input class="eye-check" type="checkbox" />
                 <div class="show_hide_box"></div>
@@ -62,9 +62,12 @@
                 check.addEventListener('click', set_attr_text)
 
             </script>
+            <button class="iniciar_Sesion_box" id="boton-iniciar-sesion" type="submit">
+                <a href="https://www.youtube.com/watch?v=ANEjAC9f0d8">Iniciar SESIÓN
+                </a>
+            </button>
         </form>
-        
-        <button class="iniciar_Sesion_box" id="boton-iniciar-sesion" type="submit"> <a href="https://www.youtube.com/watch?v=ANEjAC9f0d8">Iniciar SESIÓN</a></button>
+
 
         <!-- <dialog id="modal">
             <div class="container-text">
