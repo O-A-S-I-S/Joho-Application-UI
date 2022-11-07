@@ -19,7 +19,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16;
-    margin-top: 80px;
+    margin:2% 10% 10% 10%;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -162,6 +162,7 @@ p {
 .export{
     margin-top: 3%;
     width: 30%;
+    cursor: pointer;
 }
 .my_icon{
     width: auto;
@@ -196,7 +197,14 @@ textarea {
 .buttons{
     justify-content: center;
     text-align: center;
+    align-items: center;
     width: 50%;
+}
+.one-btn{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
 }
 .my_button{
     height: 80%;
@@ -240,6 +248,36 @@ main {
     width: 93.5%;
     margin-left: 1%;
 }
+.member{
+    display: none;
+}
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.681);
+    z-index: 2;
+}
+.overlay-container{
+    width: 50%;
+    height: 50%;
+    transform: translate(50%,50%);
+    -ms-transform: translate(50%,50%);
+    border: 4px solid var(--primary-color);
+    background-color: var(--font-light-color);
+    border-radius: 20px;
+    align-items: center;
+}
+#text{
+    margin-top:10%;
+    font-size: 20px;
+    color: var(--font-dark-color);
+    text-align: center;
+}
 
 @media screen and (max-width: 600px) {
     .my_title{
@@ -250,6 +288,9 @@ main {
 @media screen and (max-width: 600px) {
     label{
         font-size: 15px;
+    }
+    body{
+        margin: 0%;
     }
     .my_label{
         font-size: 15px;
@@ -278,32 +319,7 @@ main {
         width: auto;
         margin-top: 10%;
     }
+    #text{
+        margin-top:50%;
+    }
 }
-
-
-.member{
-    display: none;
-}
-#overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.681);
-    z-index: 2;
-    cursor: pointer;
-}
-
-#text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-
