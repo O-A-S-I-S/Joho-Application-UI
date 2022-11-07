@@ -21,7 +21,7 @@
           id="student"
           placeholder="  Código o nombre del estudiante"
         />
-        <button type="submit" class="search-bar__btn">BUSCAR</button>
+        <button type="submit" class="search-bar__btn" id="search">BUSCAR</button>
       </div>
       <div class="search-options">
         <div class="search-options__opt">
@@ -144,7 +144,7 @@
     </main>
     <footer class="menu__bar">
       <div>
-        <a href="../search/search-tab.html" class="menu__bar__item"
+        <a href="../home/index.html" class="menu__bar__item"
           ><iconify-icon
             icon="bxs:home-alt-2"
             width="36"
@@ -154,7 +154,7 @@
         >
       </div>
       <div>
-        <a href="../search/search-results.html" class="menu__bar__item">
+        <a href="../search/search-tab.html" class="menu__bar__item">
           <iconify-icon
             icon="ant-design:search-outlined"
             width="36"
@@ -194,5 +194,11 @@
         </a>
       </div>
     </footer>
+    <script>
+      var search = document.getElementById("search");
+      search.addEventListener("click", () => {
+        location.href = "search-results.html";
+      });
+    </script>
   </body>
 </html>
