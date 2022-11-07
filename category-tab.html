@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>Joho</title>
+  </head>
+  <body>
+    <header>
+      <div class="category-title">
+        <select name="category" id="category">
+          <h1>
+            <option value="report">REPORTES DE ATENCIÓN</option>
+          </h1>
+          <h1>
+          <option value="form">
+            FORMULARIOS DE INSCRIPCIÓN
+          </h1>
+          </option>
+          <h1>
+            <option value="satisfaction">REPORTES DE SATISFACCIÓN</option>
+          </h1>
+        </select>
+      </div>
+      <div class="category-options">
+        <div class="category-options__opt">
+          <a href="#"><iconify-icon icon="ci:download"></iconify-icon></a>
+        </div>
+        <div class="category-options__opt">
+          <a href="#"
+            ><iconify-icon icon="dashicons:database-import"></iconify-icon
+          ></a>
+        </div>
+        <div class="category-options__opt">
+          <a href="#"><iconify-icon icon="codicon:new-file"></iconify-icon></a>
+        </div>
+        <div class="category-options__orderby">
+          <form
+            action="category-options__orderby-submit"
+            method="get"
+            accept-charset="utf-8"
+          >
+            <select name="order" id="order" required>
+              <option
+                value=""
+                class="category-options__order-option"
+                selected
+                disabled
+              >
+                Ordenar por
+              </option>
+              <option value="descendent" class="category-options__order-option">
+                Cronológico descendente
+              </option>
+              <option value="ascendent" class="category-options__order-option">
+                Cronológico ascendente
+              </option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="results-list">
+          <div class="result-preview">
+            <div class="result-category">
+              <iconify-icon
+                icon="carbon:report"
+                width="64"
+                height="64"
+              ></iconify-icon>
+            </div>
+            <div class="result-info">
+              <div class="result-info__title">Estrés y ansiedad agudos.</div>
+              <div class="result-info__date">24-08-2020</div>
+              <div class="result-info__description">
+                Se concluyó que el estudiante tiene claros síntomas de un
+                trastorno de ansiedad, se recomendaron ejericicios de re
+              </div>
+            </div>
+          </div>
+
+          <div class="result-preview">
+            <div class="result-category">
+              <iconify-icon
+                icon="carbon:report"
+                width="64"
+                height="64"
+              ></iconify-icon>
+            </div>
+            <div class="result-info">
+              <div class="result-info__title">
+                Ataques de pánico y ansiedad.
+              </div>
+              <div class="result-info__date">24-08-2020</div>
+              <div class="result-info__description">
+                Se llegó a la conclusión de que el estudiante sufre de ataques
+                de pánico, por lo que es necesario que se lleve ...
+              </div>
+            </div>
+          </div>
+
+          <div class="result-preview">
+            <div class="result-category">
+              <iconify-icon
+                icon="carbon:report"
+                width="64"
+                height="64"
+              ></iconify-icon>
+            </div>
+            <div class="result-info">
+              <div class="result-info__title">
+                Estrés y comienzos de depresión.
+              </div>
+              <div class="result-info__date">24-08-2020</div>
+              <div class="result-info__description">
+                Se concluye que el estudiante experimenta estrés constantemente
+                y además está comenzando un patrón de...
+              </div>
+            </div>
+          </div>
+
+          <div class="result-preview">
+            <div class="result-category">
+              <iconify-icon
+                icon="carbon:report"
+                width="64"
+                height="64"
+              ></iconify-icon>
+            </div>
+            <div class="result-info">
+              <div class="result-info__title">
+                Depresión por pérdida de familiar.
+              </div>
+              <div class="result-info__date">24-08-2020</div>
+              <div class="result-info__description">
+                Se concluyó que el estudiante esta pasando por cuadro de
+                depresion debido a la reciente pérdida de un ser querido...
+              </div>
+            </div>
+          </div>
+
+          <div class="result-preview">
+            <div class="result-category">
+              <iconify-icon
+                icon="carbon:report"
+                width="64"
+                height="64"
+              ></iconify-icon>
+            </div>
+            <div class="result-info">
+              <div class="result-info__title">Pensamiento destructivo.</div>
+              <div class="result-info__date">23-08-2020</div>
+              <div class="result-info__description">
+                Se concluyó que el estudiante tiene un pensamiento destructivo,
+                siempre piensa en lo negativo de las cosas...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-load-more">
+          <button class="list-load-more__btn">Cargar más resultados</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
