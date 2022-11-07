@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="frame">
+
+        <div class="sector_logotipo">
+            <div class="logo_fondo_square"></div>
+            <div class="logo_fondo_circle"></div>
+            <div class="logo_img"></div>
+            <span class="joho_text">JOHO</span>
+        </div>
+
+
+        <div class="sector_terminos_check">
+            <span class="terminos_condiciones_text">
+                <a href="https://www.youtube.com/watch?v=ANEjAC9f0d8">Términos y Condiciones</a>
+            </span>
+
+
+            <div class="terminos_condiciones_line"></div>
+            <div class="switch">
+                <div class="dflex">
+                    <div class="switch-div">
+                        <input type="checkbox" id="switch">
+                        <label for="switch">Toggle</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="credenciales_box">
+                <input class="usuario_box" type="text" name="nombres" id="nombres" placeholder="Usuario"
+                    autocomplete="off" maxlength="40">
+                <input class="contraseña_box" type="password" name="contraseña" id="contraseña" placeholder="Contraseña"
+                    maxlength="40">
+                <input class="eye-check" type="checkbox"/>
+                <div class="show_hide_box"></div>
+            </div>
+
+            <input class="iniciar_Sesion_box" type="submit" value="Iniciar SESIÓN">
+
+            <div class="pop-up-open">
+                <a href="#modal">pop up</a>
+            </div>
+
+            <div class="container-all" id="modal">
+                <div class="pop-up">
+                    <div class="container-text">
+                        <h1>Debe completar los parametros correctamente</h1>
+                    </div>
+                    <div class="close-pop-up_box">
+                        <a href="#">Aceptar</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>
