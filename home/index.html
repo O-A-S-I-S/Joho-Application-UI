@@ -8,41 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
-    <title>Metrics</title>
+    <title>Home</title>
 </head>
 
 <body>
     <div class="buscar">
         <input type="text" placeholder="Buscar" required>
-        <!-- <div class="btn">
-            <i class="fas fa-search icon"></i>
-        </div> -->
-
     </div>
-    <!-- <div class="wraper">
-        <div class="graphics__item">
-            <h2 class="graphics__item__title">
-                Reportes de atención
-            </h2>
-            <img src="assets/carpetas.jpg" alt="" class="graphics__item__img">
-            
-            
-        </div>
-        <div class="graphics__item">
-            <h2 class="graphics__item__title">
-                Reportes de atención
-            </h2>
-            <img src="assets/img.jpg" alt="" class="graphics__item__img">
-            
-        </div>
-        <div class="graphics__item">
-            <h2 class="graphics__item__title">
-                Reportes de atención
-            </h2>
-            <img src="assets/img3.jpg" alt="" class="graphics__item__img">
-           
-    </div> -->
     <section class="main__container">
 
         <section class="graphics">
@@ -57,9 +31,21 @@
                 <h3 class="graphics__item__op1">
                     +NUEVO
                 </h3>
-                <h3 class="graphics__item__op2">
+
+                <button class="graphics__item__op2" id="boton-iniciar-sesion" type="submit">
                     Importar
-                </h3>
+                </button>
+                <dialog id="modal">
+                    <div class="container-text">
+                        <h1>Confirma realizar la importación</h1>
+                    </div>
+                    <button class="close-pop-up_box" id="boton-cerrar-pop"><a>Cancelar</a></button>
+                    <button class="close-pop-up_box2" id="boton-iniciar-sesion2"><a>Aceptar</a></button>
+                    <button class="close-pop-up_box" id="boton-cerrar-pop_2-2"><a>Cancelar</a></button>
+                    <button class="close-pop-up_box" id="boton-cerrar-pop_3-3"><a>Cancelar</a></button>
+                </dialog>
+
+
             </div>
             <div class="graphics__item">
                 <h2 class="graphics__item__title">
@@ -72,9 +58,37 @@
                 <h3 class="graphics__item__op1">
                     +NUEVO
                 </h3>
-                <h3 class="graphics__item__op2">
+                <button class="graphics__item__op2" id="boton-iniciar-sesion_2-2" type="submit">
                     Importar
-                </h3>
+                </button>                
+                
+                <dialog id="exportar">
+                    <div class="Documentos_line"></div>
+                    <div class="line_1"></div>
+                    <div class="line_2"></div>
+                    <div class="line_3"></div>
+                    <div class="container-text_4">
+                        <h1>Documentos</h1>
+                        <p>Buscar otros documentos</p>
+                    </div>
+                    <div class="lupa"></div>
+                    <div class="flecha"></div>
+                    <div class="pdf"></div>
+                    <div class="pdf2"></div>
+                    <div class="pdf3"></div>
+                    <div class="pdf4"></div>
+                    <div class="pdf5"></div>
+                    <div class="texto_archivos">
+                        <p>xxxxxxxxxxxxxxxxxxxxxxxxx.pdf &nbsp;&nbsp;00/00/0000</p>
+                        <p>xxxxxxxxxxxxxxxxxxxxxxxxx.pdf &nbsp;&nbsp;00/00/0000</p>
+                        <p>xxxxxxxxxxxxxxxxxxxxxxxxx.pdf &nbsp;&nbsp;00/00/0000</p>
+                        <p>xxxxxxxxxxxxxxxxxxxxxxxxx.pdf &nbsp;&nbsp;00/00/0000</p>
+                        <p>xxxxxxxxxxxxxxxxxxxxxxxxx.pdf &nbsp;&nbsp;00/00/0000</p>
+                    </div>
+
+                    <button class="close-pop-up_box_4" id="boton-cerrar-pop_4"><a>Aceptar</a></button>
+                </dialog>
+                    
             </div>
             <div class="graphics__item">
                 <h2 class="graphics__item__title">
@@ -87,9 +101,9 @@
                 <h3 class="graphics__item__op1">
                     +NUEVO
                 </h3>
-                <h3 class="graphics__item__op2">
+                <button class="graphics__item__op2" id="boton-iniciar-sesion_3-3" type="submit">
                     Importar
-                </h3>
+                </button>
             </div>
             <div class="graphics__item">
                 <h2 class="graphics__item__title">
@@ -106,6 +120,55 @@
             <iconify-icon icon="akar-icons:chevron-down" style="color: #600d67;" width="24" height="24"></iconify-icon>
         </section>
     </section>
+    <script type="text/javascript" id="warning">
+        const botonAbrirmodal = document.querySelector('#boton-iniciar-sesion');
+        const botonCerrarmodal = document.querySelector('#boton-cerrar-pop');
+        const modal = document.querySelector('#modal');
+
+        botonAbrirmodal.addEventListener("click", () => {
+            modal.showModal();
+        })
+
+        botonCerrarmodal.addEventListener("click", () => {
+            modal.close();
+        })
+        const botonAbrirmodal2 = document.querySelector('#boton-iniciar-sesion_2-2');
+        const botonCerrarmodal2 = document.querySelector('#boton-cerrar-pop_2-2');
+        const modal2 = document.querySelector('#modal');
+
+        botonAbrirmodal2.addEventListener("click", () => {
+            modal2.showModal();
+        })
+
+        botonCerrarmodal2.addEventListener("click", () => {
+            modal2.close();
+        })
+
+        const botonAbrirmodal3 = document.querySelector('#boton-iniciar-sesion_3-3');
+        const botonCerrarmodal3 = document.querySelector('#boton-cerrar-pop_3-3');
+        const modal3 = document.querySelector('#modal');
+
+        botonAbrirmodal3.addEventListener("click", () => {
+            modal3.showModal();
+        })
+
+        botonCerrarmodal3.addEventListener("click", () => {
+            modal3.close();
+        })
+
+        const btnAbrir = document.querySelector('#boton-iniciar-sesion2');
+        const btnCerrar = document.querySelector('#boton-cerrar-pop_4');
+        const exportar = document.querySelector('#exportar');
+
+        btnAbrir.addEventListener("click", () => {
+            exportar.showModal();
+        })
+
+        btnCerrar.addEventListener("click", () => {
+            exportar.close();
+        })
+    </script>
+
     <section class="menu__bar">
         <div class="menu__bar__item">
             <iconify-icon icon="bxs:home-alt-2" width="36" height="36"></iconify-icon>
@@ -127,24 +190,14 @@
 
         </div>
 
-        <a href="https://www.youtube.com/shorts/968wzoVmW4o">
+        <button class="close-pop-exit">
             <div class="menu__bar__item">
                 <iconify-icon icon="ci:user-close" width="36" height="36"></iconify-icon>
-                <button class="graphics__item__op2" id="boton-iniciar-sesion" type="submit">
-                    <label>
-                        Salir
-                    </label>
-                </button>
-                <dialog id="modal">
-                    <div class="container-text">
-                        <h1>Confirma realizar la importación</h1>
-                    </div>
-                    <button class="close-pop-up_box" id="boton-cerrar-pop"><a>Cancelar</a></button>
-                    <button class="close-pop-up_box2" id="boton-cerrar-pop"><a>Aceptar</a></button>
-                </dialog>
-
+                <label>
+                    Salir
+                </label>
             </div>
-        </a>
+        </button>
     </section>
 </body>
 

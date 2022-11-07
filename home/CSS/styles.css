@@ -258,29 +258,11 @@ html,body{
   color: white;
 }
 
-
-
-
-
 #modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
 }
 #modal {
   width: 800px;
-  max-width: 800px;
-  height: 400px; 
-  position: absolute;
-  background: var(--font-light-color);
-  left: calc(50% - 400px);
-  top: calc(50% - 200px);
-  border-radius: 15px;
-}
-#modal2::backdrop {
-  background-color: rgba(0, 0, 0, 0.55);
-}
-#modal2 {
-  width: 800px;
-  max-width: 800px;
   height: 400px; 
   position: absolute;
   background: var(--font-light-color);
