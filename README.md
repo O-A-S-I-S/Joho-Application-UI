@@ -1,4 +1,16 @@
 # Joho-Application-UI
+## Login - Desktop
+![Login-desktop](./ss/Login-desktop.jpg)
+## Login - Mobile
+![Login-mobile](./ss/Login-mobile.jpg)
+## Home - Desktop
+![Home-desktop](./ss/Home-desktop.jpg)
+## Home - Mobile
+![Home-mobile](./ss/Home-mobile.jpg)
+## Cancel - Import - Desktop
+![Cancel-Import-Desktop](./ss/Cancel-import-desktop.jpg)
+## Cancel - Import - Mobile
+![Cancel-Import-Mobile](./ss/Cancel-import-mobile.jpg)
 ## Search Tab - Desktop
 ![Search tab ss](./ss/search-tab.png)
 ## Search Tab - Mobile
@@ -18,3 +30,8 @@
 ## Metrics Area - Desktop
 ![Metrics area ss](./ss/metrics-area-desktop.PNG)
 ## Metrics Area - Mobile
+![Metrics area ss](./ss/metrics-area-mobile.PNG)
+## Metrics Personal - Desktop
+![Metrics personal ss](./ss/metrics-personal-desktop.PNG)
+## Metrics Personal - Mobile
+![Metrics personal ss](./ss/metrics-personal-mobile.PNG)
