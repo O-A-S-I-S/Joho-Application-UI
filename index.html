@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="frame">
+
+        <div class="sector_logotipo">
+            <div class="logo_fondo_square"></div>
+            <div class="logo_fondo_circle"></div>
+            <div class="logo_img"></div>
+            <span class="joho_text">JOHO</span>
+        </div>
+
+
+        <div class="sector_terminos_check">
+            <span class="terminos_condiciones_text">
+                <a href="https://www.youtube.com/watch?v=ANEjAC9f0d8">Términos y Condiciones</a>
+            </span>
+
+
+            <div class="terminos_condiciones_line"></div>
+            <div class="switch">
+                <div class="dflex">
+                    <div class="switch-div">
+                        <input type="checkbox" id="switch">
+                        <label for="switch">Toggle</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="" id="form">
+            <div class="credenciales_box">
+                <input class="usuario_box" type="text" name="nombres" id="nombres" placeholder="Usuario"
+                    autocomplete="off" maxlength="40">
+                <input class="contraseña_box" type="password" name="contraseña" id="contraseña" placeholder="Contraseña"
+                    autocomplete="off" maxlength="40">
+
+                <input class="eye-check" type="checkbox" />
+                <div class="show_hide_box"></div>
+            </div>
+            <script type="text/javascript">
+                let check = document.querySelector('.eye-check'),
+                    password = document.querySelector('.contraseña_box');
+
+                function set_attr_text() {
+                    password.setAttribute('type', 'text');
+                    check.addEventListener('click', set_attr_password);
+                }
+                function set_attr_password() {
+                    password.setAttribute('type', 'password');
+                    check.removeEventListener('click', set_attr_password);
+                }
+                check.addEventListener('click', set_attr_text)
+
+            </script>
+        </form>
+        
+        <button class="iniciar_Sesion_box" id="boton-iniciar-sesion" type="submit"> <a href="https://www.youtube.com/watch?v=ANEjAC9f0d8">Iniciar SESIÓN</a></button>
+
+        <!-- <dialog id="modal">
+            <div class="container-text">
+                <h1>Debe completar los parametros correctamente</h1>
+            </div>
+            <button class="close-pop-up_box" id="boton-cerrar-pop"><a>Aceptar</a></button>
+        </dialog>
+
+        <script type="text/javascript" id="warning">
+            const botonAbrirmodal = document.querySelector('#boton-iniciar-sesion');
+            const botonCerrarmodal = document.querySelector('#boton-cerrar-pop');
+            const modal = document.querySelector('#modal');
+
+            botonAbrirmodal.addEventListener("click", () => {
+                modal.showModal();
+            })
+
+            botonCerrarmodal.addEventListener("click", () => {
+                modal.close();
+            })
+        </script> -->
+
+    </div>
+</body>
+
+</html>
