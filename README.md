@@ -11,3 +11,11 @@
 ![Category tab ss](./ss/category-tab.png)
 ## Category Tab - Mobile
 ![Category tab ss](./ss/category-tab-mobile.png)
+## Metrics Area - Desktop
+![Metrics area ss](./ss/metrics-area-desktop.png)
+## Metrics Area - Mobile
+![Metrics area ss](./ss/metrics-area-mobile.png)
+## Metrics Personal - Desktop
+![Metrics personal ss](./ss/metrics-personal-desktop.png)
+## Metrics Personal - Mobile
+![Metrics personal ss](./ss/metrics-personal-mobile.png)
