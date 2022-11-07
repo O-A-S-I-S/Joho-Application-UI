@@ -3,6 +3,10 @@
 ![Login-desktop](./ss/Login-desktop.jpg)
 ## Login - Mobile
 ![Login-mobile](./ss/Login-mobile.jpg)
+## Home - Desktop
+![Home-desktop](./ss/Home-desktop.jpg)
+## Home - Mobile
+![Home-mobile](./ss/Home-mobile.jpg)
 ## Cancel - Import - Desktop
 ![Cancel-Import-Desktop](./ss/Cancel-import-desktop.jpg)
 ## Cancel - Import - Mobile
