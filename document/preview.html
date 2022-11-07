@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/preview.css" />
+    <title>Joho</title>
+    <link rel="icon" href="./img/joho.ico" type="image/x-icon" />
+  </head>
+  <div>
+    <div class="head_content">
+      <div class="my_title">
+        NUEVO
+        <div class="my_subtitle">REPORTE DE ATENCION</div>
+      </div>
+    </div>
+    <div class="my_form_container">
+      <div class="member" id="NoContent">
+        <div id="overlay">
+          <div class="overlay-container">
+            <div id="text">Hay campos sin completar.</div>
+            <div class="button-group">
+              <div class="one-btn">
+                <button class="my_button button1" onclick="offNC()">
+                  Regresar al formulario
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="member" id="ContentValidate">
+        <div id="overlay">
+          <div class="overlay-container">
+            <div id="text">Se guardará el reporte en el sistema.</div>
+            <div class="group">
+              <div class="buttons">
+                <button class="my_button button1" onclick="contentLoaded()">
+                  Confirmar
+                </button>
+              </div>
+              <div class="buttons">
+                <button class="my_button button2" onclick="offCV()">
+                  Cancelar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="member" id="ContentLoaded">
+        <div id="overlay">
+          <div class="overlay-container">
+            <div id="text">La base de datos ha sido actualizada.</div>
+            <div class="button-group">
+              <div class="one-btn">
+                <button
+                  class="my_button button1"
+                  onClick="location.href='index.html'"
+                >
+                  Salir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="member" id="CancelContent">
+        <div id="overlay">
+          <div class="overlay-container">
+            <div id="text">Se perderá todo el texto ingresado.</div>
+            <div class="group">
+              <div class="buttons">
+                <button
+                  class="my_button button1"
+                  onclick="location.href='index.html';"
+                >
+                  Confirmar
+                </button>
+              </div>
+              <div class="buttons">
+                <button class="my_button button2" onclick="offCC()">
+                  Cancelar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="g-label">
+          <label>Motivo: </label>
+        </div>
+        <div class="g-textarea">
+          <textarea
+            name="motivo"
+            id="motivo"
+            placeholder="Motivo de la cita..."
+            style="height: 30px"
+          ></textarea>
+        </div>
+      </div>
+      <div class="group">
+        <div class="g-label">
+          <label>Resumen: </label>
+        </div>
+        <div class="g-textarea">
+          <textarea
+            name="resumen"
+            id="resumen"
+            placeholder="Resumen de la cita..."
+            style="height: 45px"
+          ></textarea>
+        </div>
+      </div>
+      <div class="group">
+        <div class="g-label">
+          <label>Detalles de la sesión: </label>
+        </div>
+        <div class="g-textarea">
+          <textarea
+            name="detalles"
+            id="detalles"
+            placeholder="Detalles de la sesión..."
+            style="height: 60px"
+          ></textarea>
+        </div>
+      </div>
+      <div class="group">
+        <div class="g-label">
+          <label>Conclusiones: </label>
+        </div>
+        <div class="g-textarea">
+          <textarea
+            name="conclusiones"
+            id="conclusiones"
+            placeholder="Conclusiones de la cita..."
+            style="height: 40px"
+          ></textarea>
+        </div>
+      </div>
+      <div class="group">
+        <div class="g-label">
+          <label>Recomendaciones: </label>
+        </div>
+        <div class="g-textarea">
+          <textarea
+            name="recomendaciones"
+            id="recomendaciones"
+            placeholder="Recomendaciones de la cita..."
+            style="height: 40px"
+          ></textarea>
+        </div>
+      </div>
+      <div class="button-group">
+        <div class="buttons">
+          <button class="my_button button1" onclick="validate()">
+            REGISTRAR
+          </button>
+        </div>
+        <div class="buttons">
+          <button class="my_button button2" onclick="cancelAll()">
+            CANCELAR
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function validate() {
+      if (
+        document.getElementById("motivo").value == "" ||
+        document.getElementById("resumen").value == "" ||
+        document.getElementById("detalles").value == "" ||
+        document.getElementById("conclusiones").value == "" ||
+        document.getElementById("recomendaciones").value == ""
+      ) {
+        document.getElementById("NoContent").style.display = "block";
+        if (document.getElementById("motivo").value == "") {
+          document.getElementById("motivo").style.border =
+            "3px dashed var(--secondary-color)";
+        } else {
+          document.getElementById("motivo").style.border = "None";
+        }
+        if (document.getElementById("resumen").value == "") {
+          document.getElementById("resumen").style.border =
+            "3px dashed var(--secondary-color)";
+        } else {
+          document.getElementById("resumen").style.border = "None";
+        }
+        if (document.getElementById("detalles").value == "") {
+          document.getElementById("detalles").style.border =
+            "3px dashed var(--secondary-color)";
+        } else {
+          document.getElementById("detalles").style.border = "None";
+        }
+        if (document.getElementById("conclusiones").value == "") {
+          document.getElementById("conclusiones").style.border =
+            "3px dashed var(--secondary-color)";
+        } else {
+          document.getElementById("conclusiones").style.border = "None";
+        }
+        if (document.getElementById("recomendaciones").value == "") {
+          document.getElementById("recomendaciones").style.border =
+            "3px dashed var(--secondary-color)";
+        } else {
+          document.getElementById("recomendaciones").style.border = "None";
+        }
+      } else {
+        document.getElementById("ContentValidate").style.display = "block";
+      }
+    }
+    function offNC() {
+      document.getElementById("NoContent").style.display = "None";
+    }
+    function offCV() {
+      document.getElementById("ContentValidate").style.display = "None";
+    }
+    function contentLoaded() {
+      document.getElementById("ContentValidate").style.display = "None";
+      document.getElementById("ContentLoaded").style.display = "block";
+    }
+    function cancelAll() {
+      if (
+        document.getElementById("motivo").value != "" ||
+        document.getElementById("resumen").value != "" ||
+        document.getElementById("detalles").value != "" ||
+        document.getElementById("conclusiones").value != "" ||
+        document.getElementById("recomendaciones").value != ""
+      ) {
+        document.getElementById("CancelContent").style.display = "block";
+      } else {
+        location.href = "index.html";
+      }
+    }
+    function offCC() {
+      document.getElementById("CancelContent").style.display = "None";
+    }
+  </script>
+  <footer class="menu__bar">
+    <div>
+      <a href="" class="menu__bar__item"
+        ><iconify-icon
+          icon="bxs:home-alt-2"
+          width="2rem"
+          height="2rem"
+        ></iconify-icon>
+        <label>Inicio</label></a
+      >
+    </div>
+    <div>
+      <a href="" class="menu__bar__item">
+        <iconify-icon
+          icon="ant-design:search-outlined"
+          width="2rem"
+          height="2rem"
+        ></iconify-icon>
+        <label>Buscar</label>
+      </a>
+    </div>
+    <div>
+      <a href="" class="menu__bar__item">
+        <iconify-icon
+          icon="carbon:categories"
+          width="2rem"
+          height="2rem"
+        ></iconify-icon>
+        <label>Categorías</label>
+      </a>
+    </div>
+    <div>
+      <a href="" class="menu__bar__item">
+        <iconify-icon
+          icon="simple-icons:baremetrics"
+          width="2rem"
+          height="2rem"
+        ></iconify-icon>
+        <label>Métricas</label>
+      </a>
+    </div>
+    <div>
+      <a href="" class="menu__bar__item">
+        <iconify-icon
+          icon="ci:user-close"
+          width="2rem"
+          height="2rem"
+        ></iconify-icon>
+        <label>Salir</label>
+      </a>
+    </div>
+  </footer>
+</html>

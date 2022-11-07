@@ -1,8 +1,4 @@
 # Joho-Application-UI
-## Login - Desktop
-![Login-desktop](./ss/Login-desktop.jpg)
-## Login - Mobile
-![Login-mobile](./ss/Login-mobile.jpg)
 ## Search Tab - Desktop
 ![Search tab ss](./ss/search-tab.png)
 ## Search Tab - Mobile
