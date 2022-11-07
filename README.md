@@ -12,10 +12,10 @@
 ## Category Tab - Mobile
 ![Category tab ss](./ss/category-tab-mobile.png)
 ## Metrics Area - Desktop
-![Metrics area ss](./ss/metrics-area-desktop.png)
+![Metrics area ss](./ss/metrics-area-desktop.PNG)
 ## Metrics Area - Mobile
-![Metrics area ss](./ss/metrics-area-mobile.png)
+![Metrics area ss](./ss/metrics-area-mobile.PNG)
 ## Metrics Personal - Desktop
-![Metrics personal ss](./ss/metrics-personal-desktop.png)
+![Metrics personal ss](./ss/metrics-personal-desktop.PNG)
 ## Metrics Personal - Mobile
-![Metrics personal ss](./ss/metrics-personal-mobile.png)
+![Metrics personal ss](./ss/metrics-personal-mobile.PNG)
