@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/preview.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <title>Joho</title>
     <link rel="icon" href="./img/joho.ico" type="image/x-icon" />
   </head>
@@ -57,7 +58,7 @@
               <div class="one-btn">
                 <button
                   class="my_button button1"
-                  onClick="location.href='index.html'"
+                  onClick="location.href='../categories/category-tab.html'"
                 >
                   Salir
                 </button>
@@ -167,6 +168,58 @@
       </div>
     </div>
   </div>
+  <footer class="menu__bar">
+    <div>
+      <a href="../search/search-tab.html" class="menu__bar__item"
+        ><iconify-icon
+          icon="bxs:home-alt-2"
+          width="36"
+          height="36"
+        ></iconify-icon>
+        <label>Inicio</label></a
+      >
+    </div>
+    <div>
+      <a href="../search/search-results.html" class="menu__bar__item">
+        <iconify-icon
+          icon="ant-design:search-outlined"
+          width="36"
+          height="36"
+        ></iconify-icon>
+        <label>Buscar</label>
+      </a>
+    </div>
+    <div>
+      <a href="../categories/category-tab.html" class="menu__bar__item">
+        <iconify-icon
+          icon="carbon:categories"
+          width="36"
+          height="36"
+        ></iconify-icon>
+        <label>Categorías</label>
+      </a>
+    </div>
+    <div>
+      <a href="../metrics/area.html" class="menu__bar__item">
+        <iconify-icon
+          icon="simple-icons:baremetrics"
+          width="36"
+          height="36"
+        ></iconify-icon>
+        <label>Métricas</label>
+      </a>
+    </div>
+    <div>
+      <a href="../index.html" class="menu__bar__item">
+        <iconify-icon
+          icon="ci:user-close"
+          width="36"
+          height="36"
+        ></iconify-icon>
+        <label>Salir</label>
+      </a>
+    </div>
+  </footer>
   <script>
     function validate() {
       if (
@@ -231,63 +284,11 @@
       ) {
         document.getElementById("CancelContent").style.display = "block";
       } else {
-        location.href = "index.html";
+        location.href = "../categories/category-tab.html";
       }
     }
     function offCC() {
       document.getElementById("CancelContent").style.display = "None";
     }
   </script>
-  <footer class="menu__bar">
-    <div>
-      <a href="" class="menu__bar__item"
-        ><iconify-icon
-          icon="bxs:home-alt-2"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Inicio</label></a
-      >
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="ant-design:search-outlined"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Buscar</label>
-      </a>
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="carbon:categories"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Categorías</label>
-      </a>
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="simple-icons:baremetrics"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Métricas</label>
-      </a>
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="ci:user-close"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Salir</label>
-      </a>
-    </div>
-  </footer>
 </html>

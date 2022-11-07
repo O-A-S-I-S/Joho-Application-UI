@@ -347,40 +347,37 @@ main {
   height: 63px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  background-color: white;
   overflow: hidden;
-  background-color: var(--font-light-color);
 }
-
 .menu__bar__item {
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 0.5rem;
   text-decoration: none;
-  color: var(--purple);
+  color: inherit;
   position: relative;
+  
 }
-
-.menu__bar__item > label,
-.menu__bar__item > iconify-icon {
+.menu__bar__item >label,.menu__bar__item>iconify-icon{
   cursor: pointer;
   z-index: 1;
 }
 
-.menu__bar > div:hover {
+.menu__bar>div:hover {
   border-radius: 50%;
   z-index: 1;
-  color: var(--font-light-color);
-  --show: "block";
+  color: white;
+  --show:'block';
 }
-
-.menu__bar__item::after {
-  content: "";
+.menu__bar__item::after{
+  content: '';
   background-color: var(--primary-light-color);
   border-radius: 50%;
   position: absolute;
-  color: var(--font-light-color);
+  color: white;
   width: 90px;
   height: 90px;
   bottom: -25px;

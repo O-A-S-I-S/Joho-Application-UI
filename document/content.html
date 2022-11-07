@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/content.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <title>Joho</title>
     <link rel="icon" href="./img/joho.ico" type="image/x-icon" />
   </head>
@@ -53,11 +54,11 @@
         <div class="s-content">
           <div class="my_label l-t1 l-t11">
             <span id="nombre">Jorge Diaz (201923537)</span>
-            <img class="my_icon" src="img/carbon_report.png" />
+            <img class="my_icon" src="assets/carbon_report.png" />
           </div>
           <div class="flexing">
             <div class="s-img">
-              <img class="export" src="img/Export.png" id="dwn-btn" />
+              <img class="export" src="assets/Export.png" id="dwn-btn" />
             </div>
             <div class="s-content">
               <div class="my_label l-t1 l-t12">
@@ -67,7 +68,7 @@
           </div>
         </div>
         <div class="s-img">
-          <img class="my_img" src="img/image_profile.png" alt="Avatar" />
+          <img class="my_img" src="assets/image_profile.png" alt="Avatar" />
         </div>
       </div>
       <div class="group">
@@ -145,6 +146,58 @@ Se le enseñaron al estudiante técnicas de respiración para calmarse cuando si
         </div>
       </div>
     </div>
+    <footer class="menu__bar">
+      <div>
+        <a href="../search/search-tab.html" class="menu__bar__item"
+          ><iconify-icon
+            icon="bxs:home-alt-2"
+            width="36"
+            height="36"
+          ></iconify-icon>
+          <label>Inicio</label></a
+        >
+      </div>
+      <div>
+        <a href="../search/search-results.html" class="menu__bar__item">
+          <iconify-icon
+            icon="ant-design:search-outlined"
+            width="36"
+            height="36"
+          ></iconify-icon>
+          <label>Buscar</label>
+        </a>
+      </div>
+      <div>
+        <a href="../categories/category-tab.html" class="menu__bar__item">
+          <iconify-icon
+            icon="carbon:categories"
+            width="36"
+            height="36"
+          ></iconify-icon>
+          <label>Categorías</label>
+        </a>
+      </div>
+      <div>
+        <a href="../metrics/area.html" class="menu__bar__item">
+          <iconify-icon
+            icon="simple-icons:baremetrics"
+            width="36"
+            height="36"
+          ></iconify-icon>
+          <label>Métricas</label>
+        </a>
+      </div>
+      <div>
+        <a href="../index.html" class="menu__bar__item">
+          <iconify-icon
+            icon="ci:user-close"
+            width="36"
+            height="36"
+          ></iconify-icon>
+          <label>Salir</label>
+        </a>
+      </div>
+    </footer>
   </body>
   <script>
     function download(filename, text) {
@@ -203,56 +256,5 @@ Se le enseñaron al estudiante técnicas de respiración para calmarse cuando si
       document.getElementById("ContentDownloaded").style.display = "None";
     }
   </script>
-  <footer class="menu__bar">
-    <div>
-      <a href="" class="menu__bar__item"
-        ><iconify-icon
-          icon="bxs:home-alt-2"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Inicio</label></a
-      >
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="ant-design:search-outlined"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Buscar</label>
-      </a>
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="carbon:categories"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Categorías</label>
-      </a>
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="simple-icons:baremetrics"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Métricas</label>
-      </a>
-    </div>
-    <div>
-      <a href="" class="menu__bar__item">
-        <iconify-icon
-          icon="ci:user-close"
-          width="2rem"
-          height="2rem"
-        ></iconify-icon>
-        <label>Salir</label>
-      </a>
-    </div>
-  </footer>
+  
 </html>

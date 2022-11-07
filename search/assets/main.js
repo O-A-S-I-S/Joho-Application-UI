@@ -13,8 +13,11 @@ const confirmationBack = document.querySelector(".confirmation__back");
 const header = document.querySelector(".header");
 const container = document.querySelector(".container");
 const menuBar = document.querySelector(".menu__bar");
-
+var doc = document.getElementById("document--view");
 var countChecks = 0;
+doc.addEventListener("click", () => {
+  location.href = "../document/content.html";
+});
 exportCheck.addEventListener("click", () => {
   if (exportCheck.checked) {
     confirm.style.display = "block";
