@@ -75,7 +75,6 @@ body {
 .joho_text {
   width: 100px;
   color: var(--font-dark-color);
-  /* position: absolute; */
   top: 0px;
   left: 0px;
   margin-left: calc(50% - 50px);
@@ -235,42 +234,20 @@ body {
   font-size: 22px;
 }
 
-.pop-up-open {
-  position: absolute;
-  top: 300px;
-  left: calc(50% - 75px);
-  display: block;
-  background: #000000;
-  padding: 20px 50px;
-  border-radius: 50px;
-  margin-top: 550px;
-}
-
-.pop-up-open a{
-  color: var(--font-light-color);
+.iniciar_Sesion_box a {
   text-decoration: none;
+  color: var(--font-light-color);
 }
 
-.container-all {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: var(--font-dark-color);
-  visibility: hidden;
+#modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
 }
-
-.container-all:target {
-  background: #000000cc;
-  visibility: visible;
-  opacity: 1;
-}
-
-.pop-up {
+#modal {
   width: 100%;
   max-width: 800px;
-  height: 400px;
-  position: relative;
-  display: flex;
+  height: 400px; 
+  position: absolute;
+
   background: var(--font-light-color);
   top: 30%;
   left: 30%;
